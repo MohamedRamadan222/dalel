@@ -1,3 +1,4 @@
+import 'package:dalel_ramadan/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,7 +9,13 @@ void main() {
  
    @override
    Widget build(BuildContext context) {
-     return const Scaffold();
+     return MaterialApp(
+       home: Scaffold(
+         body: Container(
+           child: Image.asset(Assets.onBoardingOne),
+         ),
+       ),
+     );
    }
  }
- 
+
