@@ -12,7 +12,7 @@ void main() {
      return MaterialApp(
        home: Scaffold(
          body: Container(
-           child: Image.asset(Assets.onBoardingOne),
+           child: Image.asset(Assets.onBoardingThree),
          ),
        ),
      );
