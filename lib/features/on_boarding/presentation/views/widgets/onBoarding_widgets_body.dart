@@ -1,4 +1,5 @@
 import 'package:dalel_ramadan/core/utils/app_text_style.dart';
+import 'package:dalel_ramadan/features/on_boarding/data/models/on_boarding_model.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_assets.dart';
 import 'custom_smooth_page_indicator.dart';
@@ -13,19 +14,20 @@ class onBoardingWidgetBody extends StatelessWidget {
     return SizedBox(
       height: 550,
       child: PageView.builder(
-        physics: const BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           controller: _controller,
-          itemCount: 3,
+          itemCount: onBoardingData.length,
           itemBuilder: (context, index) {
             return Column(children: <Widget>[
               Container(
                 width: 290,
                 height: 343,
-                decoration: const BoxDecoration(
-                    image:
-                        DecorationImage(image: AssetImage(Assets.onBoarding1),
-                          fit: BoxFit.fill
-                        ),
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage(
+                        onBoardingData[index].imagePath,
+                      ),
+                      fit: BoxFit.fill),
                 ),
               ),
               const SizedBox(
@@ -36,7 +38,7 @@ class onBoardingWidgetBody extends StatelessWidget {
                 height: 32,
               ),
               Text(
-                'Explore The history with Dale in a smart way',
+                onBoardingData[index].title,
                 style: CustomTextStyles.poppins500style24
                     .copyWith(fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
@@ -46,8 +48,8 @@ class onBoardingWidgetBody extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-              const Text(
-                'Using our app’s history libraries you can find many historical periods ',
+              Text(
+                onBoardingData[index].subTitle,
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,

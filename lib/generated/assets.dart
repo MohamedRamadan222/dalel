@@ -15,6 +15,7 @@ class Assets {
   static const String imagesVector1 = 'assets/images/Vector1.svg';
   static const String imagesVector2 = 'assets/images/Vector2.svg';
   static const String libMain = 'lib/main.dart';
+  static const String modelsOnBoardingModel = 'lib/features/on_boarding/data/models/on_boarding_model.dart';
   static const String routesAppRouter = 'lib/core/routes/app_router.dart';
   static const String utilsAppAssets = 'lib/core/utils/app_assets.dart';
   static const String utilsAppColors = 'lib/core/utils/app_colors.dart';
