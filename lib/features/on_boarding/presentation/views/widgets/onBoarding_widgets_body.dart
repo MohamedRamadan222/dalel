@@ -10,13 +10,24 @@ class onBoardingWidgetBody extends StatelessWidget {
   final PageController _controller = PageController();
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return SizedBox(
+      height: 550,
       child: PageView.builder(
+        physics: const BouncingScrollPhysics(),
           controller: _controller,
           itemCount: 3,
           itemBuilder: (context, index) {
             return Column(children: <Widget>[
-              Image.asset(Assets.onBoarding1),
+              Container(
+                width: 290,
+                height: 343,
+                decoration: const BoxDecoration(
+                    image:
+                        DecorationImage(image: AssetImage(Assets.onBoarding1),
+                          fit: BoxFit.fill
+                        ),
+                ),
+              ),
               const SizedBox(
                 height: 24,
               ),
@@ -29,6 +40,8 @@ class onBoardingWidgetBody extends StatelessWidget {
                 style: CustomTextStyles.poppins500style24
                     .copyWith(fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
               ),
               const SizedBox(
                 height: 16,
@@ -36,6 +49,8 @@ class onBoardingWidgetBody extends StatelessWidget {
               const Text(
                 'Using our app’s history libraries you can find many historical periods ',
                 textAlign: TextAlign.center,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
               ),
             ]);
           }),
