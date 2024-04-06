@@ -6,7 +6,7 @@ abstract class CustomTextStyles {
     fontSize: 64,
     fontWeight: FontWeight.w400,
     color: AppColors.deepBrown,
-    fontFamily: 'Pacifico',
+    fontFamily: "Pacifico",
   );
   static const poppins500style24 = TextStyle(
     fontSize: 24,

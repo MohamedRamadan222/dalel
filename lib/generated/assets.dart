@@ -25,7 +25,7 @@ class Assets {
   static const String viewsSplashView = 'lib/features/splash/presentation/views/splash_view.dart';
   static const String widgetsCustomBtn = 'lib/core/widgets/custom_btn.dart';
   static const String widgetsCustomNavBar = 'lib/features/on_boarding/presentation/views/widgets/custom_nav_bar.dart';
-  static const String widgetsCustomSmoothPage = 'lib/features/on_boarding/presentation/views/widgets/custom_smooth_page_indicator.dart';
+  static const String widgetsCustomSmoothPageIndicator = 'lib/features/on_boarding/presentation/views/widgets/custom_smooth_page_indicator.dart';
   static const String widgetsOnBoardingView = 'lib/features/on_boarding/presentation/views/widgets/on_boarding_view.dart';
   static const String widgetsOnBoardingWidgetsBody = 'lib/features/on_boarding/presentation/views/widgets/onBoarding_widgets_body.dart';
 
