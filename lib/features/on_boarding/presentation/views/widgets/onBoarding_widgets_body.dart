@@ -1,21 +1,21 @@
 import 'package:dalel_ramadan/core/utils/app_text_style.dart';
 import 'package:dalel_ramadan/features/on_boarding/data/models/on_boarding_model.dart';
 import 'package:flutter/material.dart';
-import '../../../../../core/utils/app_assets.dart';
 import 'custom_smooth_page_indicator.dart';
 
 // ignore: camel_case_types
 class onBoardingWidgetBody extends StatelessWidget {
-  onBoardingWidgetBody({super.key});
-
-  final PageController _controller = PageController();
+  const onBoardingWidgetBody({super.key, required this.controller, this.onPageChanged});
+  final Function(int)? onPageChanged;
+  final PageController controller;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 550,
       child: PageView.builder(
+        onPageChanged: onPageChanged ,
+          controller: controller,
           physics: const BouncingScrollPhysics(),
-          controller: _controller,
           itemCount: onBoardingData.length,
           itemBuilder: (context, index) {
             return Column(children: <Widget>[
@@ -33,7 +33,7 @@ class onBoardingWidgetBody extends StatelessWidget {
               const SizedBox(
                 height: 24,
               ),
-              CustomSmoothPageInd(controller: _controller),
+              CustomSmoothPageInd(controller: controller),
               const SizedBox(
                 height: 32,
               ),
