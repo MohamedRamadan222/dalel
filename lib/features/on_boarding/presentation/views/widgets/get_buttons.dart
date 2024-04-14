@@ -1,4 +1,5 @@
 
+import 'package:dalel_ramadan/features/on_boarding/presentation/views/functions/on_boarding.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/functions/navigation.dart';
@@ -20,12 +21,14 @@ class GetButtons extends StatelessWidget {
           CustomBtn(
             text: AppStrings.createAccount,
             onPressed: () {
+              onBoardingVisited();
               customReplacementNavigat(context, "/signUp");
             },
           ),
           const SizedBox(height: 16),
           GestureDetector(
             onTap: () {
+              onBoardingVisited();
               customReplacementNavigat(context, "/signIn");
             },
             child: Text(

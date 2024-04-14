@@ -1,4 +1,5 @@
 import 'package:dalel_ramadan/core/functions/navigation.dart';
+import 'package:dalel_ramadan/features/on_boarding/presentation/views/functions/on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'custom_nav_bar.dart';
 import 'get_buttons.dart';
@@ -27,6 +28,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             ),
             CustomNavBar(
               onTap: () {
+                onBoardingVisited();
                 customReplacementNavigat(context, "/signUp");
               },
             ),

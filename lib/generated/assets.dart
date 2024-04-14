@@ -2,9 +2,11 @@
 class Assets {
   Assets._();
 
+  static const String cacheCacheHelper = 'lib/core/database/cache/cache_helper.dart';
   static const String fontsPacificoRegular = 'assets/fonts/Pacifico-Regular.ttf';
   static const String fontsPoppinsRegular = 'assets/fonts/Poppins-Regular.ttf';
   static const String functionsNavigation = 'lib/core/functions/navigation.dart';
+  static const String functionsOnBoarding = 'lib/features/on_boarding/presentation/views/functions/on_boarding.dart';
   static const String generatedAssets = 'lib/generated/assets.dart';
   static const String imagesForgetPassword = 'assets/images/forgetPassword.png';
   static const String imagesOnBoarding1 = 'assets/images/onBoarding1.png';
@@ -17,6 +19,8 @@ class Assets {
   static const String libMain = 'lib/main.dart';
   static const String modelsOnBoardingModel = 'lib/features/on_boarding/data/models/on_boarding_model.dart';
   static const String routesAppRouter = 'lib/core/routes/app_router.dart';
+  static const String servicesServiceLocator = 'lib/core/services/service_locator.dart';
+  static const String sevicesServiceLocator = 'lib/core/sevices/service_locator.dart';
   static const String utilsAppAssets = 'lib/core/utils/app_assets.dart';
   static const String utilsAppColors = 'lib/core/utils/app_colors.dart';
   static const String utilsAppConstants = 'lib/core/utils/app_constants.dart';
