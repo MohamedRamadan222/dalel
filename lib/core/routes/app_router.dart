@@ -1,4 +1,4 @@
-import 'package:dalel_ramadan/features/outh/presentation/Views/sign_up.dart';
+import 'package:dalel_ramadan/features/outh/presentation/Views/sign_up_view.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/on_boarding/presentation/views/widgets/on_boarding_view.dart';

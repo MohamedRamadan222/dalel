@@ -1,10 +1,9 @@
-import 'package:dalel_ramadan/core/utils/app_colors.dart';
 import 'package:dalel_ramadan/core/utils/app_strings.dart';
-import 'package:dalel_ramadan/core/utils/app_text_style.dart';
 import 'package:dalel_ramadan/core/widgets/custom_btn.dart';
 import 'package:flutter/material.dart';
 import 'Widgets/custom_text_field.dart';
-import 'Widgets/terms_and_conidtion.dart';
+import 'Widgets/have_An_account_widget.dart';
+import 'Widgets/terms_and_condition.dart';
 import 'Widgets/welcome_text_widget.dart';
 
 class SignUpView extends StatelessWidget {
@@ -39,7 +38,7 @@ class SignUpView extends StatelessWidget {
               labelText: AppStrings.password,
             )),
             const SliverToBoxAdapter(
-              child: TermsAndConidtionWidget(),
+              child: TermsAndConditionWidget(),
             ),
             const SliverToBoxAdapter(
               child: SizedBox(
@@ -57,30 +56,11 @@ class SignUpView extends StatelessWidget {
             const SliverToBoxAdapter(
                 child: HaveAnAccountWidget(
               text1: AppStrings.alreadyHaveAnAccount,
-              text2: AppStrings.signUp,
+              text2: AppStrings.signIn,
             )),
           ],
         ),
       ),
-    );
-  }
-}
-
-class HaveAnAccountWidget extends StatelessWidget {
-  const HaveAnAccountWidget(
-      {super.key, required this.text1, required this.text2});
-
-  final String text1, text2;
-  @override
-  Widget build(BuildContext context) {
-    return Align(
-      child: Text.rich(TextSpan(children: [
-        TextSpan(text: text1, style: CustomTextStyles.poppins400style12),
-        TextSpan(
-            text: text2,
-            style: CustomTextStyles.poppins400style12
-                .copyWith(color: AppColors.lightGery )),
-      ])),
     );
   }
 }
