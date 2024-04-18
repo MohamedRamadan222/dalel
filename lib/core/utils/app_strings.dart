@@ -1,4 +1,4 @@
-abstract class AppStrings {
+abstract class  AppStrings {
   //ToDo:All Strings
 
   static const String appName = "Dalel",
