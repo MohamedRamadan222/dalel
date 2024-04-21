@@ -2,6 +2,8 @@
 class Assets {
   Assets._();
 
+  static const String authCubitAuthCubit = 'lib/features/outh/presentation/auth_cubit/auth_cubit.dart';
+  static const String authCubitAuthState = 'lib/features/outh/presentation/auth_cubit/auth_state.dart';
   static const String cacheCacheHelper = 'lib/core/database/cache/cache_helper.dart';
   static const String fontsPacificoRegular = 'assets/fonts/Pacifico-Regular.ttf';
   static const String fontsPoppinsRegular = 'assets/fonts/Poppins-Regular.ttf';
